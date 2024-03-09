@@ -1,40 +1,69 @@
 @font-face {
-     font-family: a;
+     font-family: myFont;
      src: url(font/ProtestRiot-Regular.ttf);
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #282a35;
 }
 
+a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 100ms ease;
+}
+
 body {
-    padding: 20px;
-    max-width: 80ch;
     margin: 0 1rem;
     margin: auto;
-    font-family: a;
+    padding: 20px;
+    max-width: 80ch;
+    font-family: myFont;
     line-height: 1.5;
     color: #eceff4;
     font-weight: normal;
 }
 
-.top-nav-mid {
+footer {
+    margin-top: 30px;
+}
+
+footer > * {
+    margin-top: 10px;
+}
+
+#nav {
     display: flex;
-    text-align: center;
+    overflow: auto;
+    align-items: center;
     text-decoration: none;
-    line-height: 2.3;
 }
 
-.snow {
-    max-width: 50px;
-    max-height: 50px;
-    margin-right: 20px;
-    margin-bottom: 10px;    
+#nav > a {
+    margin-right: 24px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
+#nav > a:hover {
+    color: grey;
+}
+
+#snow {
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px 20px 0;
+}
+
+#snow > img {
+    width: 100%;
+    height: 100%;
+}
+
+#content > *{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
